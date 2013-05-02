@@ -2,6 +2,8 @@ SS1306
 ======
 (a compact plain-C tile graphics library for the SSD1306 OLED display controller)
 
+Demo: http://www.youtube.com/watch?v=CMIz759vo9c
+
 <pre> ____    ____    ____       _     __       __     ____
 /\  _`\ /\  _`\ /\  _`\   /' \  /'__`\   /'__`\  /'___\
 \ \,\L\_\ \,\L\_\ \ \/\ \/\_, \/\_\L\ \ /\ \/\ \/\ \__/
