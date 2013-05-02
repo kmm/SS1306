@@ -2,13 +2,14 @@ SS1306
 ======
 (a compact plain-C tile graphics library for the SSD1306 OLED display controller)
 
- ____    ____    ____       _     __       __     ____
+<pre> ____    ____    ____       _     __       __     ____
 /\  _`\ /\  _`\ /\  _`\   /' \  /'__`\   /'__`\  /'___\
 \ \,\L\_\ \,\L\_\ \ \/\ \/\_, \/\_\L\ \ /\ \/\ \/\ \__/
  \/_\__ \\/_\__ \\ \ \Small Scale_/_\_<_\ \ \ \ \ \  _``\
    /\ \L\ \/\ \L\ \ \ \_\ \ \ \ \/\ \L\ \\ \ \_\ \ \ \L\ \
    \ `\____\ `\____\ \____/  \ \_\ \____/ \ \____/\ \____/
     \/_____/\/_____/\/___/    \/_/\/___/   \/___/  \/___/
+</pre>
 
 I'll bet some SSD1306 OLED DRIVER ROUTINES would only ENHANCE my EMBEDDED DISPLAY TECHNOLOGY
 
@@ -21,6 +22,7 @@ a parallel bus is a trivial exercise left to the reader.
 [!] SSD1306 Display Memory 101
 Buffer is 8kbit (1kB) addressed with two auto-incrementable pointers as 8 pages * (128 columns * 8 bits)
 
+<pre>
          Display Memory        Column
      Cols 0    ->   127       
 		+---------------+       +---+
@@ -31,7 +33,8 @@ w PAGE6 | CCCCC...CCCCC |       +---+
 s PAGE7 | CCCCC...CCCCC |         ^--- 8 1-bit pixels per column byte, arranged vertically regardless of addressing mode
         +---------------+ 
 		 X => Pointer at PAGE 0, COL 0
-		 
+</pre>	 
+
 [!] Fuck yeah tile graphics	 
 For the purposes of oled_move(), oled_home(), oled_puts(), oled_putc() and most everything else,
 the display is a 16x8 array of 8x8 character cells. Functions expect horizontal addressing mode, other modes
