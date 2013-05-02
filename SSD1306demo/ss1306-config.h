@@ -1,0 +1,24 @@
+/*
+ * ssd1306_config.h
+ *
+ * Created: 4/29/2013 7:11:39 PM
+ *  Author: kmm
+ */ 
+
+
+#ifndef SS1306_CONFIG_H_
+#define SS1306_CONFIG_H_
+
+#define SS1306_OLED_GEOM_W 128
+#define SS1306_OLED_GEOM_H 64
+
+#define SS1306_OLED_CLK PC4
+#define SS1306_OLED_DAT PC5
+#define SS1306_OLED_RST PB2
+#define SS1306_OLED_DC  PC1
+#define SS1306_OLED_CS  PC2
+
+#define SS1306_OLED_PORTB_MASK _BV(SS1306_OLED_RST);
+#define SS1306_OLED_PORTC_MASK _BV(SS1306_OLED_CLK) | _BV(SS1306_OLED_DAT) | _BV(SS1306_OLED_DC) | _BV(SS1306_OLED_CS);
+
+#endif
