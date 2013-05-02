@@ -46,7 +46,7 @@ Character generator table is stored in progmem as "font", and contains 128 cells
 PETSCII layout (i.e. you can generate them from C64 font files). Included is the canonical 8x8 C64 font,
 with a couple minor changes to make box-drawn digits look better.
 Characters are rotated 90 degrees clockwise (so we don't have to waste AVR cycles flipping tiles).
-The pointy part of an 'A' should point that way -> if you're doing it right.
+The pointy part of an 'A' should point that way -> if you're doing it right.<br>
 It's irritating to go alone, take this: http://www.min.at/prinz/o/software/pixelfont/
 
 [!] Fast as a (LOGO) turtle<br>
@@ -67,11 +67,11 @@ Chargen can be trimmed to 288ish bytes if only the bare minimum alphanumerics ar
 </pre>
 
 [!] We built this city in AVR studio 6 using avr-gcc<br>
-Very little AVR-specific operations outside of the headers and PROGMEM macros, porting to PIC/ARM/HP9000/M88k/etc should be trivial.
+But there is very little AVR-specific operations outside of the headers and PROGMEM macros, porting to PIC/ARM/HP9000/M88k/etc should be trivial.
 
 [!] See Also<br>
-Ladyada's framebuffer-based arduinolib (c++) SSD1306 implementation: https://github.com/adafruit/Adafruit_SSD1306
-RTFM: https://www.adafruit.com/datasheets/SSD1306.pdf 
+Ladyada's framebuffer-based arduinolib (c++) SSD1306 implementation: https://github.com/adafruit/Adafruit_SSD1306<br>
+RTFM: https://www.adafruit.com/datasheets/SSD1306.pdf<br>
 
 [!] Legal Fictions<br>
 Original work released under terms of the BSD license.
