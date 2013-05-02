@@ -76,9 +76,10 @@ RTFM: https://www.adafruit.com/datasheets/SSD1306.pdf
 Original work released under terms of the BSD license.
 Included chargen/font data generated from c64_lower.64c font and used without permission. 
 (Chargen data is assumed to be of negligible economic value and public domain/abandoned. Lawyer at me if you got beef.)
-
+<pre>
 -------------------------------------------------------------------------------
 Inspired by tile-based arcade gfx, hacked together by kmm/smallscaleresearch
 April 2013
 Contact: kmm CHR(0x40) rmlabs.net
 -------------------------------------------------------------------------------
+</pre>
