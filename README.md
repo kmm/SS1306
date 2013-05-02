@@ -59,11 +59,13 @@ Basic character display functions are less than 3k compiled, 1k of which is the 
 Chargen can be trimmed to 288ish bytes if only the bare minimum alphanumerics are required.
 
 [!] Zero to Pixels
-> Set pin/port defs in ssd1306-config.h
-> oled_init()
-> oled_clear() // buffer is full of entropy on boot
-> oled_home()  // pointers should end up here, but let's make sure
-> oled_puts("POOP") // POOP
+<pre>
+&gt; Set pin/port defs in ssd1306-config.h
+&gt; oled_init()
+&gt; oled_clear() // buffer is full of entropy on boot
+&gt; oled_home()  // pointers should end up here, but let's make sure
+&gt; oled_puts("POOP") // POOP
+</pre>
 
 [!] We built this city in AVR studio 6 using avr-gcc
 Very little AVR-specific operations outside of the headers and PROGMEM macros, porting to PIC/ARM/HP9000/M88k/etc should be trivial.
